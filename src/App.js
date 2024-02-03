@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './App.css';
 import React from "react";
 import {
@@ -39,6 +40,29 @@ function App() {
      </Routes>
    </Router>
    </div>
+=======
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+>>>>>>> 4b15181506f3c6d7c54c3935ac552c104775cd55
   );
 }
 
