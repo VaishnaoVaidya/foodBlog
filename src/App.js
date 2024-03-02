@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './App.css';
 import React from "react";
 import {
@@ -33,36 +32,13 @@ function App() {
       <Route exact path="/company" element={<Company/>} />
       <Route exact path="/culture" element={<Culture/>} />
       <Route exact path="/technology" element={<Technology/>} />
-      <Route path='/blogdetails' element={<BlogDetails/>} >
-      <Route path=':id' element={<BlogDetails/>} />
-      </Route>
+      {/* <Route path='/blogdetails' element={<BlogDetails/>} > */}
+      <Route path='/blogdetails/:id' element={<BlogDetails/>} />
+      {/* </Route> */}
       <Route exact path="/login" element={<Login/>} />
      </Routes>
    </Router>
    </div>
-=======
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
->>>>>>> 4b15181506f3c6d7c54c3935ac552c104775cd55
   );
 }
 
