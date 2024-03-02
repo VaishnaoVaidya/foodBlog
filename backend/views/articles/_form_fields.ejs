@@ -1,0 +1,31 @@
+    <div class="form-group mt-4">
+        <label for="author">Author</label>
+        <input required value="<%= article.author %>"  type="text" name="author" id="author" class="form-control">
+    </div>
+
+    <div class="form-group mt-4">
+        <label for="file">Image</label>
+        <input 
+         id="file" name="image" id="image" type="file" > 
+        <input type="hidden" name="_method" value="PUT" />
+
+    </div>
+
+    <div class="form-group mt-4">
+        <label for="title">Title</label>
+        <input required value="<%= article.title %>"  type="text" name="title" id="title" class="form-control">
+    </div>
+
+    <div class="form-group mt-4">
+        <label for="content">Content</label>
+        <textarea required name="content" id="content" class="form-control"><%= article.content %></textarea>
+    </div>
+
+    <div class="form-group mt-4">
+        <label for="markdown">Markdown</label>
+        <textarea required  name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+    </div>
+
+    <a href="/" class="btn btn-secondary mt-4">cancel</a>
+    <button type="submit" class="btn btn-primary mt-4">Save</button>
+
